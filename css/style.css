@@ -6,6 +6,53 @@ body {
     overflow: hidden;
 }
 
+/*loading*/
+#loading {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+#loading_text {
+    font-size: 2rem;
+    text-align: center;
+    width: 100vw;
+    position: absolute;
+    top: 35vh;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /*skip button*/
 @keyframes hvr-buzz {
     50% {
@@ -293,7 +340,7 @@ input[type="text"]:focus {
 }
 
 #spaceman {
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     will-change: top, left;
 
     display: none;
@@ -366,8 +413,8 @@ input[type="text"]:focus {
 }
 
 .planet {
-    transform: translate3d(0,0,0);
-    will-change: transform; 
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
 
     display: none;
     position: absolute;

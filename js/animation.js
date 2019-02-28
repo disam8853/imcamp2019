@@ -24,6 +24,7 @@ $(function() {
 
 
 $(window).on('load', function() {
+    $("#loading").hide();
     if (!skip)
         aniInit();
 
