@@ -1,0 +1,37 @@
+.info {
+    background-image: url('../img/planet/inbg.jpg');
+}
+
+.info-container::before {
+    background-image: url('../img/planet/inbg.jpg');
+}
+
+.page-container {
+    margin: auto 7vw;
+}
+
+.paginationjs-prev {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 9vmin);
+}
+
+.paginationjs-next {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 9vmin);
+}
+
+.paginationjs-prev:hover, .paginationjs-next:hover {
+    transform: scale(1.5,1.5);
+    transition: transform 250ms ease-in;
+}
+
+.paginationjs {
+    text-align: center;
+}
+
+.paginationjs li {
+    display: inline;
+    font-size: 10vmin;
+}

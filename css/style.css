@@ -1,0 +1,422 @@
+@import 'https://fonts.googleapis.com/css?family=Space+Mono';
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/*skip button*/
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+#nav {}
+
+#skip-img {
+    width: 4rem;
+    transform: translateY(0.2rem);
+    transition: transform 1s;
+}
+
+#skip-btn {
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    overflow: hidden;
+}
+
+#skip-btn:hover {
+    animation-name: hvr-buzz;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*console*/
+#console {
+    display: none;
+    color: #00FF00;
+    font-family: monospace;
+    font-size: 3vmin;
+
+    width: 60vw;
+
+    margin-left: 20vw;
+    position: absolute;
+    top: calc(50vh + 50vmin);
+    overflow-wrap: normal;
+}
+
+@keyframes console_top {
+    from {
+        top: calc(50vh + 50vmin);
+    }
+
+    to {
+        top: 50vh;
+    }
+}
+
+input[type="text"] {
+    display: inline-block;
+    width: calc(60vw - 13em);
+    border: none;
+    background: black;
+    padding: 0 .5em;
+
+    color: #00FF00;
+    font-family: monospace;
+}
+
+input[type="text"]:focus {
+    background: black;
+    outline: none;
+}
+
+#symbol {
+    /*width: 100vw;
+    min-height: 100vh;
+    position: relative;*/
+}
+
+#sun {
+    position: absolute;
+    width: 30vmin;
+
+    top: calc(50vh - 14.28vmin);
+    left: calc(50vw - 15vmin);
+
+    /*animation: sunshine 4s linear infinite;*/
+}
+
+.logo {
+    display: none;
+    position: absolute;
+    width: 15vmin;
+
+    top: calc(50vh - 7.3vmin);
+    left: calc(50vw - 7.5vmin);
+
+    /*animation: myOrbit 5s linear infinite;*/
+}
+
+#logo-github {}
+
+#logo-fb {}
+
+#logo-google {}
+
+#logo-spotify {}
+
+#logo-youtube {}
+
+@keyframes sunshine {
+    0% {
+        filter: drop-shadow(0px 0px 3vw rgba(255, 191, 0, 0.9));
+        /*transform: translateY(0px);*/
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 1vw rgba(255, 191, 0, 0.2));
+        /*transform: translateY(-1vw);*/
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 3vw rgba(255, 191, 0, 0.9));
+        /*transform: translateY(0px);*/
+    }
+}
+
+@keyframes github-init {
+    from {}
+
+    to {
+        transform: translateX(40vmin);
+    }
+}
+
+@keyframes fb-init {
+    from {}
+
+    to {
+        transform: translate(calc(40vmin*0.30901699437), calc(40vmin*0.95105651629));
+    }
+}
+
+@keyframes google-init {
+    from {}
+
+    to {
+        transform: translate(calc(40vmin * -0.80901699437), calc(40vmin * 0.58778525229));
+    }
+}
+
+@keyframes spotify-init {
+    from {}
+
+    to {
+        transform: translate(calc(40vmin*-0.80901699437), calc(40vmin*-0.58778525229));
+    }
+}
+
+@keyframes youtube-init {
+    from {}
+
+    to {
+        transform: translate(calc(40vmin*0.30901699437), calc(40vmin*-0.95105651629));
+    }
+}
+
+@keyframes sun_shrink {
+    from {
+        width: 30vmin;
+        top: calc(50vh - 14.28vmin);
+        left: calc(50vw - 15vmin);
+    }
+
+    to {
+        width: 20vmin;
+        top: 20vh;
+        left: calc(50vw - 10vmin);
+    }
+}
+
+@keyframes logo_enlarge {
+    from {
+        width: 15vmin;
+        top: calc(50vh - 7.3vmin);
+        left: calc(50vw - 7.5vmin);
+        transform: rotate(0deg) translateX(40vmin) rotate(0deg);
+    }
+
+    to {
+        width: 30vmin;
+        top: calc(50vh - 14.6vmin);
+        left: calc(50vw - 15vmin);
+        transform: rotate(360deg) translateX(calc(50vmax + 15vmin)) rotate(-360deg);
+    }
+}
+
+
+/*stars background*/
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+.stars,
+.twinkling,
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: -100;
+}
+
+.twinkling {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    z-index: -99;
+
+    animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index: -97;
+
+    animation: move-clouds-back 200s linear infinite;
+}
+
+/* planets */
+#rocket {
+    display: none;
+    position: absolute;
+    width: 20vmin;
+    left: -1.6vmin;
+    bottom: -11.2vmin;
+    transform: rotate(45deg);
+    animation: rocket-ani 4s ease-in-out infinite;
+    transition: bottom 3s linear, left 3s linear;
+}
+
+@keyframes rocket-ani {
+    0% {
+        left: -1.6vmin;
+        bottom: -11.2vmin;
+    }
+
+    50% {
+        left: -10.4vmin;
+        bottom: -20vmin;
+    }
+
+    100% {
+        left: -1.6vmin;
+        bottom: -11.2vmin;
+    }
+}
+
+#spaceman {
+    transform: translate3d(0,0,0);
+    will-change: top, left;
+
+    display: none;
+    position: absolute;
+    width: 13vmin;
+    top: 0;
+    left: 0;
+    transform: rotate(30deg);
+    transition: all 5s linear;
+}
+
+@keyframes myOrbit {
+    from {
+        transform: rotate(0deg) translateX(40vmin) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(40vmin) rotate(-360deg);
+    }
+}
+
+@keyframes myOrbit2 {
+    from {
+        transform: rotate(72deg) translateX(40vmin) rotate(-72deg);
+    }
+
+    to {
+        transform: rotate(432deg) translateX(40vmin) rotate(-432deg);
+    }
+}
+
+@keyframes myOrbit3 {
+    from {
+        transform: rotate(144deg) translateX(40vmin) rotate(-144deg);
+    }
+
+    to {
+        transform: rotate(504deg) translateX(40vmin) rotate(-504deg);
+    }
+}
+
+@keyframes myOrbit4 {
+    from {
+        transform: rotate(216deg) translateX(40vmin) rotate(-216deg);
+    }
+
+    to {
+        transform: rotate(570deg) translateX(40vmin) rotate(-570deg);
+    }
+}
+
+@keyframes myOrbit5 {
+    from {
+        transform: rotate(288deg) translateX(40vmin) rotate(-288deg);
+    }
+
+    to {
+        transform: rotate(648deg) translateX(40vmin) rotate(-648deg);
+    }
+}
+
+#sunlabel {
+    display: none;
+    position: absolute;
+    width: 40vmin;
+
+    top: calc(50vh - 16vmin);
+    left: calc(50vw - 20vmin);
+    animation: sunshine 4s linear infinite;
+}
+
+.planet {
+    transform: translate3d(0,0,0);
+    will-change: transform; 
+
+    display: none;
+    position: absolute;
+    width: 32vmin;
+    top: calc(50vh - 12vmin);
+    left: calc(50vw - 16vmin);
+
+    transition: width 200ms linear;
+}
+
+#information-planet {
+    animation: myOrbit 20s linear infinite;
+}
+
+#photos-planet {
+    animation: myOrbit2 20s linear infinite;
+}
+
+#signup-planet {
+    /*animation-delay: -8s;*/
+    animation: myOrbit3 20s linear infinite;
+}
+
+#about-planet {
+    /*animation-delay: -12s;*/
+    animation: myOrbit4 20s linear infinite;
+}
+
+#course-planet {
+    /*animation-delay: -16s;*/
+    animation: myOrbit5 20s linear infinite;
+}
+
+.white-light {
+    display: none;
+    z-index: 999;
+    background-color: white;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.orbit {
+    display: none;
+    position: absolute;
+    left: calc(50vw - 40vmin);
+    top: calc(50vh - 40vmin);
+    z-index: 0;
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 50%;
+    border: solid 1px white;
+}

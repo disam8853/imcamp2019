@@ -1,0 +1,7 @@
+.info {
+    background-image: url('../img/planet/subg.jpg');
+}
+
+.info-container::before {
+    background-image: url('../img/planet/subg.jpg');
+}

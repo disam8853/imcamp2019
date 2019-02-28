@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    min-height: 100vh;
+    font-family:'Noto Sans TC', sans-serif;
+    font-size: 1.313rem;
+}
+
+.white-light {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+.info {
+    /*background-image: url('https://www.jpl.nasa.gov/images/dawn/PIA22530_adj.jpg');*/
+    min-height: 100vh;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.info-container {
+    /*border: 2px solid;*/
+
+    /*need to be responsive !important*/
+    width: 70vw;
+    margin: 0 auto 8vmax auto;
+    padding: 2em;
+}
+
+.info-header {
+    height: 25vmin;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.back {
+    position: absolute;
+    bottom: 1vmin;
+    left: 0;
+    font-size: 3vmin;
+    background-color: rgba(250, 250, 250, 0.6);
+    border-radius: 8px;
+    padding: 0.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.back a:hover {
+    filter: drop-shadow(0px 0 3vw rgba(0, 0, 0, 1));
+}
+
+.landed-rocket-img {
+    width: 20vmin;
+    transform: translateY(-12vmin);
+    transition: transform 2s ease-out;
+}
+
+.info-container {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.info-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*background-image: url('https://www.jpl.nasa.gov/images/dawn/PIA22530_adj.jpg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    filter: blur(6px);
+    margin: -30px;
+    z-index: 0;
+}
+
+.text {
+    position: relative;
+    /*background-color: rgba(250,250,250,0.2);
+    border-radius: 30px;*/
+    z-index: 1;
+}
+
+.text-header {
+    text-align: center;
+}
+
+#content {
+    position: relative;
+    display: block;
+    line-height: 2.8rem;
+}
