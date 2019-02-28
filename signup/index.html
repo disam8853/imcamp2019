@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	
+
     <div id="information" class="info">
         <div class="info-header">
             <div class="back">
@@ -22,18 +22,39 @@
             <img src="../img/rocket.png" class="landed-rocket-img">
         </div>
         <div class="info-container">
-            <div class="text">
-                <div class="text-header">
-                    <h1>馬上報名</h1>
-                </div>
-                <div class="content">
-                    
-                </div>
-            </div>
+                <div class="text">
+                        <div class="text-header">
+                            <h1>馬上報名</h1>
+                        </div>
+                        <div class="content">
+                                <form action="https://us-central1-imcamp.cloudfunctions.net/api/main">
+                                    <input type="text" name="name" placeholder="你的名字">
+                                    <select name="gender">
+                                        <option value="male">男</option>
+                                        <option value="female">女</option>
+                                    </select>
+                                    <input type="text" name="birthday" placeholder="生日">
+                                    <input type="text" name="ID" placeholder="身份證字號">
+                                    <input type="text" name="school" placeholder="學校">
+                                    <input type="text" name="grade" placeholder="年級">
+                                    <input type="text" name="team" placeholder="類組">
+                                    <input type="text" name="dietPrefer" placeholder="飲食偏好">
+                                    <input type="text" name="illness" placeholder="特殊疾病">
+                                    <input type="text" name="size" placeholder="營服尺寸">
+                                    <input type="text" name="phone" placeholder="聯絡電話">
+                                    <input type="text" name="fb" placeholder="Facebook">
+                                    <input type="text" name="email" placeholder="email">
+                                    <input type="text" name="emergency" placeholder="緊急聯絡人">
+                                    <input type="text" name="relationship" placeholder="關係">
+                                    <input type="text" name="emPhone" placeholder="緊急聯絡人電話">
+                                    <textarea type="text" name="intro" placeholder="自我介紹"></textarea>
+                                    <textarea type="text" name="motivation" placeholder="動機"></textarea>
+                                    <textarea type="text" name="expection" placeholder="期許"></textarea>
+                                </form>  
+                        </div>
+                    </div>
         </div>
     </div>
-    <div class="white-light"></div>
-    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- javascript -->
     <script src="../js/cate.js"></script>

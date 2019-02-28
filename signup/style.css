@@ -5,3 +5,10 @@
 .info-container::before {
     background-image: url('../img/planet/subg.jpg');
 }
+
+#content {
+    position: relative;
+    display: block;
+    line-height: 2.8rem;
+}
+
