@@ -14,9 +14,10 @@ $(function() {
             // template method of yourself
             // dataContainer.html(html);
             $(".page-container").fadeOut(500, function() {
-                $(this).html(content[data - 1])
-                        .fadeIn(500);
-                    $(".text-header h1").text(title[data - 1]);
+                $(".pages").hide();
+                $("#p" + data).show();
+                $(this).fadeIn(500);
+                $(".text-header h1").text(title[data - 1]);
             });
         }
     })

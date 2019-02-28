@@ -35,3 +35,7 @@
     display: inline;
     font-size: 10vmin;
 }
+
+#p1, #p2, #p3, #p4 {
+    display: none;
+}
