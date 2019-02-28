@@ -7,23 +7,27 @@
 }
 
 .page-container {
-    margin: auto 7vw;
+    margin: auto;
+}
+
+.paginationjs-pages {
+    /*display: inline;*/
+    text-align: left;
 }
 
 .paginationjs-prev {
-    position: absolute;
-    left: 0;
-    top: calc(50% - 9vmin);
+    margin-left: 10%;
+    min-width: 20%;
 }
 
 .paginationjs-next {
-    position: absolute;
-    right: 0;
-    top: calc(50% - 9vmin);
+    width: 20%;
+    margin-left: 50%; 
 }
 
-.paginationjs-prev:hover, .paginationjs-next:hover {
-    transform: scale(1.5,1.5);
+.paginationjs-prev:hover,
+.paginationjs-next:hover {
+    transform: scale(1.5, 1.5);
     transition: transform 250ms ease-in;
 }
 
@@ -33,9 +37,12 @@
 
 .paginationjs li {
     display: inline;
-    font-size: 10vmin;
+    font-size: 1.5rem;
 }
 
-#p1, #p2, #p3, #p4 {
+#p1,
+#p2,
+#p3,
+#p4 {
     display: none;
 }
