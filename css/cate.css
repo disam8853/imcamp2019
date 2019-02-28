@@ -1,7 +1,8 @@
 body {
     background-color: black;
     min-height: 100vh;
-    font-family:'Noto Sans TC', sans-serif;
+    /*font-family:'Noto Sans TC', sans-serif;*/
+    font-family: “Arial”,”Microsoft YaHei”,”黑體”,”宋體”,sans-serif;
     font-size: 1.313rem;
 }
 
@@ -110,4 +111,13 @@ a:hover {
     position: relative;
     display: block;
     line-height: 2.8rem;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 1rem;
+  }
+  #content {
+    line-height: 2rem;
+  }
 }
