@@ -23,14 +23,14 @@
             </div>
             <img src="../img/rocket.png" class="landed-rocket-img">
         </div>
-        <div class="info-container container">
+        <div class="info-container">
             <div class="text">
                 <div class="text-header">
                     <h2>馬上報名</h2>
                 </div>
-                <div class="content">
+                <div id="content">
                     <form action="https://us-central1-imcamp.cloudfunctions.net/api/main">
-                        <ul class="stepper linear">
+                        <ul class="stepper ">
                             <li class="step active">
                                 <div class="step-title waves-effect">報名須知</div>
                                 <div class="step-content">
@@ -50,9 +50,12 @@
                                     　新台幣6000元整。含保險、食宿、交通、教材⋯等等。
                                     ※繳費須知：
                                     　本團隊將於2018年5月7日於粉專公布錄取名單，並寄發繳費通知至各學員所留之電子信箱。錄取學員繳費後，若放棄參加資格，可於時限內申請部分退費。退費規則將與繳費通知一併寄發，請同學特別注意!
-                                    我同意
-                                    newspaperCopyright © 2018 國立臺灣大學資訊管理營 Designed by 陳漢威 & 黃意芹 & 朱元均
-                                    Contributed by YuYuan Chen & YuHsin Lin
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>我同意</span>
+                                        </label>
+                                    </p>
                                     <div class="step-actions">
                                         <!-- Here goes your actions buttons -->
                                         <button class="waves-effect waves-dark btn next-step">下一步</button>
@@ -63,7 +66,10 @@
                                 <div class="step-title waves-effect">基本資料</div>
                                 <div class="step-content">
                                     <!-- Your step content goes here (like inputs or so) -->
-                                    <input type="text" name="name" placeholder="你的名字">
+                                    <div class="input-field">
+                                        <input type="text" name="name">
+                                        <label>你的名字</label>
+                                    </div>
                                     <div class="input-field">
                                         <select name="gender">
                                             <option value="" disabled selected>你的生理性別</option>
@@ -81,11 +87,26 @@
                                 <div class="step-title waves-effect">個人資料</div>
                                 <div class="step-content">
                                     <!-- Your step content goes here (like inputs or so) -->
-                                    <input type="text" name="birthday" placeholder="生日ex:2001/05/13">
-                                    <input type="text" name="ID" placeholder="身份證字號">
-                                    <input type="text" name="school" placeholder="學校">
-                                    <input type="text" name="grade" placeholder="年級">
-                                    <input type="text" name="team" placeholder="類組">
+                                    <div class="input-field">
+                                        <input type="text" name="birthday">
+                                        <label>生日ex:2001/05/13</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="ID">
+                                        <label>身份證字號</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="school">
+                                        <label>學校</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="grade">
+                                        <label>年級</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="team">
+                                        <label>類組</label>
+                                    </div>
                                     <div class="input-field">
                                         <select name="dietPrefer">
                                             <option value="" disabled selected>飲食偏好</option>
@@ -94,8 +115,21 @@
                                             <option value="female">蛋奶素</option>
                                         </select>
                                     </div>
-                                    <input type="text" name="illness" placeholder="特殊疾病">
-                                    <input type="text" name="size" placeholder="營服尺寸">
+                                    <div class="input-field">
+                                        <input type="text" name="illness">
+                                        <label>特殊疾病</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <select name="size">
+                                            <option value="" disabled selected>營服尺寸</option>
+                                            <option value="S">S</option>
+                                            <option value="M">M</option>
+                                            <option value="L">L</option>
+                                            <option value="XL">XL</option>
+                                            <option value="2XL">2XL</option>
+                                            <option value="3XL">3XL</option>
+                                        </select>
+                                    </div>
                                     <div class="step-actions">
                                         <!-- Here goes your actions buttons -->
                                         <button class="waves-effect waves-dark btn next-step">下一步</button>
@@ -106,12 +140,30 @@
                                 <div class="step-title waves-effect">聯絡資料</div>
                                 <div class="step-content">
                                     <!-- Your step content goes here (like inputs or so) -->
-                                    <input type="text" name="phone" placeholder="聯絡電話">
-                                    <input type="text" name="fb" placeholder="Facebook">
-                                    <input type="text" name="email" placeholder="email">
-                                    <input type="text" name="emergency" placeholder="緊急聯絡人">
-                                    <input type="text" name="relationship" placeholder="關係">
-                                    <input type="text" name="emPhone" placeholder="緊急聯絡人電話">
+                                    <div class="input-field">
+                                        <input type="text" name="phone">
+                                        <label>聯絡電話</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="fb">
+                                        <label>Facebook</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="email">
+                                        <label>E-mail</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="emergency">
+                                        <label>緊急聯絡人</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="relationship">
+                                        <label>關係</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input type="text" name="emPhone">
+                                        <label>緊急聯絡人電話</label>
+                                    </div>
                                     <div class="step-actions">
                                         <!-- Here goes your actions buttons -->
                                         <button class="waves-effect waves-dark btn next-step">下一步</button>
@@ -122,9 +174,18 @@
                                 <div class="step-title waves-effect">介紹、動機、期許</div>
                                 <div class="step-content">
                                     <!-- Your step content goes here (like inputs or so) -->
-                                    <textarea type="text" name="intro" placeholder="自我介紹"></textarea>
-                                    <textarea type="text" name="motivation" placeholder="動機"></textarea>
-                                    <textarea type="text" name="expection" placeholder="期許"></textarea>
+                                    <div class="input-field">
+                                        <textarea class="materialize-textarea nottoomuch" name="intro" data-length="150"></textarea>
+                                        <label>自我介紹</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <textarea class="materialize-textarea nottoomuch" name="motivation" data-length="150"></textarea>
+                                        <label>動機</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <textarea class="materialize-textarea" name="expection"></textarea>
+                                        <label>期許</label>
+                                    </div>
                                     <div class="step-actions">
                                         <!-- Here goes your actions buttons -->
                                         <button class="waves-effect waves-dark btn next-step">繳交</button>
@@ -149,6 +210,7 @@
     })
     $(document).ready(function() {
         $('select').formSelect();
+        $('.nottoomuch').characterCounter();
     });
     </script>
     <!-- javascript -->
