@@ -28,9 +28,9 @@
                 <div class="text-header">
                     <h2>馬上報名</h2>
                 </div>
-                <div id="content">
-                    <form action="https://us-central1-imcamp.cloudfunctions.net/api/main">
-                        <ul class="stepper ">
+                <div class="content">
+                    <form action="https://us-central1-imcamp.cloudfunctions.net/api/register" method="POST">
+                        <ul class="stepper linear">
                             <li class="step active">
                                 <div class="step-title waves-effect">報名須知</div>
                                 <div class="step-content">
@@ -188,7 +188,7 @@
                                     </div>
                                     <div class="step-actions">
                                         <!-- Here goes your actions buttons -->
-                                        <button class="waves-effect waves-dark btn next-step">繳交</button>
+                                        <button type="submit" class="subbtn">繳交</button>
                                     </div>
                                 </div>
                             </li>
