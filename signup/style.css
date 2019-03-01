@@ -12,6 +12,10 @@
     line-height: 2.8rem;
 }
 
+.info-container {
+	color: white;
+}
+
 
 .subbtn{
 	border: none;
