@@ -40,7 +40,7 @@ $(function() {
         }
     });
 
-    $('#content').pagination('go', 4);
+    // $('#content').pagination('go', 4);
 
     $("#next").click(function() {
         pg.pagination('next');

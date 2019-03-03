@@ -4,8 +4,6 @@ if (location.hash.substr(1) == "skip") {
     skip = true;
     skipAll = true;
     skipAllAni();
-    // 等到圖片載入完再旋轉星球
-    // 手機按上一頁會停留在白色背景
 }
 
 $(function() {
@@ -182,6 +180,9 @@ function enterInit() {
 }
 
 function planetsready() {
+    var bgm = new Audio('audio/space.mp3');
+    bgm.play();
+
     $(".planet")
         .on("mouseenter", function() {
             $(".planet").css("-webkit-animation-play-state", "paused")
@@ -230,13 +231,13 @@ function planetsready() {
                     .fadeIn(800, function() {
                         window.location.href = "signup/index.html";
                     });
-                
+
             } else if (st == "about") {
                 $(".white-light").css("background-color", "#ef9921")
                     .fadeIn(800, function() {
                         window.location.href = "about/index.html";
                     });
-                
+
             } else if (st == "course") {
                 $(".white-light").css("background-color", "#828282")
                     .fadeIn(800, function() {
