@@ -9,3 +9,8 @@
 .white-light {
     background-color: #e2ab12;
 }
+
+.carousel .carousel-item {
+	width: 50vw;
+	height: auto;
+}
