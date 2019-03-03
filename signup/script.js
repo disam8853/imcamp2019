@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 
-var cols = ["name", "gender", "birthday", "ID", "school"    ,"grade","team", "dietPrefer", "illness", "size", "phone",     "fb", "email", "emergency", "relationship", "emPhone", "intro", "motivation", "expection"];
+var cols = ["name", "gender", "birthday", "ID", "school","grade","team", "dietPrefer", "illness", "size", "phone",     "fb", "email", "emergency", "relationship", "emPhone", "intro", "motivation", "expection"];
 var chin = ["名字","性別","生日","身份證字號","學校","年級","類組","飲食偏好","特殊疾病","營服尺寸","聯絡電話","facebook","email","緊急聯絡人","關係","緊急聯絡人電話","自我介紹","動機","期望"]
 var filters = [];
 var checker = function(event) {
