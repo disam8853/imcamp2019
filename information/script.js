@@ -15,7 +15,7 @@ $(function() {
                 $(".pages").hide();
                 $("#p" + data).show();
                 $(this).fadeIn(500);
-                $(".text-header h2").text(title[data - 1]);
+                $(".text-header").text(title[data - 1]);
             });
             if (data == 1) {
                 $("#prev").addClass('disabled').removeClass('waves-effect');
@@ -40,7 +40,7 @@ $(function() {
         }
     });
 
-    $('#content').pagination('go', 2);
+    $('#content').pagination('go', 4);
 
     $("#next").click(function() {
         pg.pagination('next');

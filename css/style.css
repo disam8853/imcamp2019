@@ -388,7 +388,7 @@ input[type="text"]:focus {
     }
 
     to {
-        transform: rotate(570deg) translateX(40vmin) rotate(-570deg);
+        transform: rotate(576deg) translateX(40vmin) rotate(-576deg);
     }
 }
 
