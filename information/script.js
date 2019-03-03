@@ -1,22 +1,55 @@
-var title = ["營隊介紹", "課程介紹", "營隊流程", "企業參訪"];
+var title = ["營隊介紹", "課程介紹", "營隊流程", "企業參訪", "贊助廠商"];
 
 $(function() {
-    $('#content').pagination({
-        dataSource: [1, 2, 3, 4],
+    var pg = $('#content');
+    pg.pagination({
+        dataSource: [1, 2, 3, 4, 5],
         pageSize: 1,
         showPageNumbers: false,
-        showNavigator: true,
-        prevText: "Previous",
-        nextText: "Next",
+        showNavigator: false,
+        showPrevious: false,
+        showNext: false,
+        className: 'paginationjs-theme-blue',
         callback: function(data, pagination) {
-            // template method of yourself
-            // dataContainer.html(html);
             $(".page-container").fadeOut(500, function() {
                 $(".pages").hide();
                 $("#p" + data).show();
                 $(this).fadeIn(500);
-                $(".text-header h1").text(title[data - 1]);
+                $(".text-header h2").text(title[data - 1]);
             });
+            if (data == 1) {
+                $("#prev").addClass('disabled').removeClass('waves-effect');
+            }
+            else if (data == 5) {
+                $("#next").addClass('disabled').removeClass('waves-effect');
+            }
+            else {
+                $("#prev").addClass('waves-effect').removeClass('disabled');
+                $("#next").addClass('waves-effect').removeClass('disabled');
+            }
+
+            var lis = $(".pagination li");
+            for (var i = 0; i < pagination.totalNumber; i++) {
+                if (i == data - 1) {
+                    $(lis[i + 1]).addClass('active').removeClass('waves-effect');
+                }
+                else {
+                    $(lis[i + 1]).addClass('waves-effect').removeClass('active');
+                }
+            }
         }
-    })
+    });
+
+    $('#content').pagination('go', 2);
+
+    $("#next").click(function() {
+        pg.pagination('next');
+    });
+    $("#prev").click(function(){
+        pg.pagination('previous');
+    });
 });
+
+function gopage(id) {
+    $('#content').pagination('go', id);
+}

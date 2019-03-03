@@ -5,3 +5,7 @@
 .info-container::before {
     background-image: url('../img/planet/abbg.jpg');
 }
+
+.white-light {
+	background-color: #ef9921;
+}

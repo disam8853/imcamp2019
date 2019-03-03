@@ -6,6 +6,10 @@
     background-image: url('../img/planet/subg.jpg');
 }
 
+.white-light {
+	background-color: #0a62d6;
+}
+
 #content {
     position: relative;
     display: block;
@@ -15,7 +19,6 @@
 .info-container {
 	color: white;
 }
-
 
 .subbtn{
 	border: none;

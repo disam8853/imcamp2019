@@ -215,18 +215,33 @@ function planetsready() {
             // $("#rocket").fadeOut(1000);
             $("#spaceman").fadeOut(500);
 
-            $(".white-light").fadeIn(800, function() {
-                if (st == "information") {
-                    window.location.href = "information/index.html";
-                } else if (st == "photos") {
-                    window.location.href = "photos/index.html";
-                } else if (st == "signup") {
-                    window.location.href = "signup/index.html";
-                } else if (st == "about") {
-                    window.location.href = "about/index.html";
-                } else if (st == "course") {
-                    window.location.href = "course/index.html";
-                }
-            });
+            if (st == "information") {
+                $(".white-light").css("background-color", "#d5abea")
+                    .fadeIn(800, function() {
+                        window.location.href = "information/index.html";
+                    });
+            } else if (st == "photos") {
+                $(".white-light").css("background-color", "#e2ab12")
+                    .fadeIn(800, function() {
+                        window.location.href = "photos/index.html";
+                    });
+            } else if (st == "signup") {
+                $(".white-light").css("background-color", "#0a62d6")
+                    .fadeIn(800, function() {
+                        window.location.href = "signup/index.html";
+                    });
+                
+            } else if (st == "about") {
+                $(".white-light").css("background-color", "#ef9921")
+                    .fadeIn(800, function() {
+                        window.location.href = "about/index.html";
+                    });
+                
+            } else if (st == "course") {
+                $(".white-light").css("background-color", "#828282")
+                    .fadeIn(800, function() {
+                        window.location.href = "course/index.html";
+                    });
+            }
         });
 }

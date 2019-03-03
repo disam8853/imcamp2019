@@ -98,6 +98,7 @@ a:hover {
 
 .text {
     position: relative;
+    top: -3vmax;
     /*background-color: rgba(250,250,250,0.2);
     border-radius: 30px;*/
     z-index: 1;

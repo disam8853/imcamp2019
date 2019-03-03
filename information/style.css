@@ -6,38 +6,24 @@
     background-image: url('../img/planet/inbg.jpg');
 }
 
+.white-light {
+    background-color: #d5abea;
+}
+
 .page-container {
     margin: auto;
 }
 
-.paginationjs-pages {
-    /*display: inline;*/
-    text-align: left;
-}
-
-.paginationjs-prev {
-    margin-left: 10%;
-    min-width: 20%;
-}
-
-.paginationjs-next {
-    width: 20%;
-    margin-left: 50%; 
-}
-
-.paginationjs-prev:hover,
-.paginationjs-next:hover {
-    transform: scale(1.5, 1.5);
-    transition: transform 250ms ease-in;
-}
+/*pagination*/
 
 .paginationjs {
     text-align: center;
 }
 
-.paginationjs li {
-    display: inline;
-    font-size: 1.5rem;
+.pagination-btn {
+    width: 100%;
+    text-align: center;
+    line-height: 0;
 }
 
 #p1,
@@ -45,4 +31,8 @@
 #p3,
 #p4 {
     display: none;
+}
+
+#p2 {
+    text-align: center;
 }
