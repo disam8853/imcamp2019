@@ -18,6 +18,11 @@ $(function() {
         skipAll = true;
         skipAllAni();
     });
+    $('.modal').modal();
+    var instance = M.Modal.getInstance($('.modal'));
+    $("#spaceman").click(function () {
+        instance.open();
+    });
 });
 
 
