@@ -49,3 +49,17 @@
 hr {
     border-color: gray;
 }
+
+.responsive-img {
+    margin-top: 5vh;
+    margin-left: 20%;
+    width: 60%;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .responsive-img {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

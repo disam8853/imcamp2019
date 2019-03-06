@@ -1,9 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Space+Mono';
-
 body {
     background-color: black;
     min-height: 100vh;
     overflow: hidden;
+    font-family:'Noto Sans TC', sans-serif;
 }
 
 /*loading*/
