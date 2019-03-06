@@ -7,7 +7,7 @@
 }
 
 .white-light {
-	background-color: #0a62d6;
+    background-color: #0a62d6;
 }
 
 #content {
@@ -17,33 +17,40 @@
 }
 
 .info-container {
-	color: white;
-}
-
-.subbtn{
-	border: none;
-	border-radius: 2px;
-	display: inline-block;
-	height: 36px;
-	line-height: 36px;
-	padding: 0 16px;
-	text-transform: uppercase;
-	vertical-align: middle;
-	-webkit-tap-highlight-color: transparent;
-}
-
-.subbtn{
-	text-decoration: none;
-	color: #fff;
-	background-color: #26a69a;
-	text-align: center;
-	letter-spacing: .5px;
-	-webkit-transition: background-color .2s ease-out;
-	transition: background-color .2s ease-out;
-	cursor: pointer;
     color: white;
 }
 
-#content label, #content input {
-	color: white;
+.subbtn {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.subbtn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    color: white;
+}
+
+#content label,
+#content input {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .step-content {
+        margin-right: 1px !important;
+    }
 }

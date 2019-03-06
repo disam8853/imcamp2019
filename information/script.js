@@ -3,7 +3,7 @@ var title = ["營隊介紹", "課程介紹", "營隊流程", "企業參訪", "�
 $(function() {
     var pg = $('#content');
     pg.pagination({
-        dataSource: [1, 2, 3, 4, 5],
+        dataSource: [1, 2, 3, 4],
         pageSize: 1,
         showPageNumbers: false,
         showNavigator: false,
@@ -20,7 +20,7 @@ $(function() {
             if (data == 1) {
                 $("#prev").addClass('disabled').removeClass('waves-effect');
             }
-            else if (data == 5) {
+            else if (data == 4) {
                 $("#next").addClass('disabled').removeClass('waves-effect');
             }
             else {
