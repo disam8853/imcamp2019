@@ -19,9 +19,24 @@ $(function() {
         skipAllAni();
     });
     $('.modal').modal();
-    var instance = M.Modal.getInstance($('.modal'));
-    $("#spaceman").click(function () {
-        instance.open();
+    var modal1 = M.Modal.getInstance($('#modal1')),
+        modal2 = M.Modal.getInstance($('#modal2'));
+    $("#spaceman").click(function() {
+        modal1.open();
+    });
+    var t;
+    $("#rocket").on('mousedown', function(e) {
+        t = setTimeout(function(){
+            modal2.open();
+        }, 2000);
+    });
+
+    $("#rocket").on('mouseup mouseleave', function(e) {
+        clearTimeout(t);
+    });
+
+    $("#rocket").on('keypress', function () {
+        
     });
 });
 
