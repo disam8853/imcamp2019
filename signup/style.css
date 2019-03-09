@@ -10,6 +10,10 @@
     background-color: #0a62d6;
 }
 
+a {
+    color: #f4f4f4;
+}
+
 #content {
     position: relative;
     display: block;
@@ -17,7 +21,7 @@
 }
 
 .info-container {
-    color: white;
+    color: #f4f4f4;
 }
 
 .subbtn {
@@ -47,7 +51,7 @@
 #content label,
 #content input,
 #content textarea {
-    color: white;
+    color: #f4f4f4;
 }
 
 .input-field>label {

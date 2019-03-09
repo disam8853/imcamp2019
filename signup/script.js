@@ -106,15 +106,10 @@ var checker = function(event) {
             event.preventDefault();
             break;
         }
-<<<<<<< HEAD
-    }
-    return;
-=======
     }    
     console.log('check success');
     // event.preventDefault();
-    return;    
->>>>>>> 8a9c95d95e73796453f2168efa2529e82d6d3ded
+    return;
 }
 
 $('form').submit(checker);
