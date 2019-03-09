@@ -97,6 +97,7 @@ var checker = function(event) {
             console.log(sel[cols[i]].el.selectedIndex);
             if(sel[cols[i]].el.selectedIndex == 0){
                 alert(chin[i]+"未填寫");
+                event.preventDefault();
                 break;
             }
         }
@@ -106,8 +107,8 @@ var checker = function(event) {
             break;
         }
     }    
-    console.log('check end');
-    event.preventDefault();
+    console.log('check success');
+    // event.preventDefault();
     return;    
 }
 
