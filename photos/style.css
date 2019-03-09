@@ -11,6 +11,12 @@
 }
 
 .carousel .carousel-item {
-	width: 50vw;
-	height: auto;
+    width: 70vw;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel .carousel-item {
+        width: 90vw;
+    }
 }
