@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     var instance = M.Carousel.getInstance($('.carousel'));
     var t = setInterval(function(){instance.next();}, 3000);
-    $(".carousel").click(function(){
+    $(".carousel").on('mousedown', function(){
     	clearInterval(t);
     });
 });
