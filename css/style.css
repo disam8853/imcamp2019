@@ -411,6 +411,12 @@ input[type="text"]:focus {
     animation: sunshine 4s linear infinite;
 }
 
+#symbol {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .planet {
     transform: translate3d(0, 0, 0);
     will-change: transform;
@@ -433,17 +439,14 @@ input[type="text"]:focus {
 }
 
 #signup-planet {
-    /*animation-delay: -8s;*/
     animation: myOrbit3 20s linear infinite;
 }
 
 #about-planet {
-    /*animation-delay: -12s;*/
     animation: myOrbit4 20s linear infinite;
 }
 
 #course-planet {
-    /*animation-delay: -16s;*/
     animation: myOrbit5 20s linear infinite;
 }
 
@@ -465,4 +468,10 @@ input[type="text"]:focus {
     height: 80vmin;
     border-radius: 50%;
     border: solid 1px white;
+}
+
+@media only screen and (max-width: 992px) {
+    .modal {
+        width: 80vw;
+    }
 }

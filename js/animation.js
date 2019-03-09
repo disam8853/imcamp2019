@@ -18,12 +18,16 @@ $(function() {
         skipAll = true;
         skipAllAni();
     });
-    $('.modal').modal();
+
+    // $('.modal').modal();
+    $('#modal1, #modal2').modal();
     var modal1 = M.Modal.getInstance($('#modal1')),
         modal2 = M.Modal.getInstance($('#modal2'));
+
     $("#spaceman").click(function() {
         modal1.open();
     });
+
     var t;
     $("#rocket").on('mousedown', function(e) {
         t = setTimeout(function() {
@@ -211,8 +215,15 @@ function enterInit() {
 }
 
 function planetsready() {
-    var bgm = new Audio('audio/space.mp3');
-    bgm.play();
+    $("#modal3").modal();
+    $('.collapsible').collapsible();
+    var modal3 = M.Modal.getInstance($('#modal3'));
+    modal3.open();
+
+    $("html").click(function() {
+        var bgm = new Audio('audio/space.mp3');
+        bgm.play();
+    });
 
     $(".planet")
         .on("mouseenter", function() {

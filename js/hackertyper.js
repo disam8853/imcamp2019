@@ -117,6 +117,10 @@ var Typer = {
             console.html(console.html().substring(0, cont.length - 1)); // remove it
         else
             this.write("|"); // else write it
+    },
+
+    end: function() {
+        clearInterval(this.accessCountimer);
     }
 }
 
