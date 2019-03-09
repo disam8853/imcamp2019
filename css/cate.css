@@ -47,27 +47,33 @@ body {
     position: absolute;
     bottom: 1vmin;
     left: 0;
-    font-size: 3vmin;
     border-radius: 8px;
     padding: 0.3rem;
 }
 
-.back-btn {
-    width: 10vw;
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
-a {
+.back-btn {
+    width: 20vmin;
+    animation: rotate 10s linear infinite;
+}
+
+/*a {
     text-decoration: none;
     color: black;
 }
 
 a:hover {
     color: black;
-}
-
-.back a:hover {
-    filter: drop-shadow(0px 0 3vw rgba(0, 0, 0, 1));
-}
+}*/
 
 .landed-rocket-img {
     width: 20vmin;

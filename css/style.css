@@ -318,7 +318,7 @@ input[type="text"]:focus {
     bottom: -11.2vmin;
     transform: rotate(45deg);
     animation: rocket-ani 4s ease-in-out infinite;
-    transition: bottom 3s linear, left 3s linear;
+    transition: all 3s linear;
 }
 
 @keyframes rocket-ani {

@@ -26,7 +26,7 @@ $(function() {
     });
     var t;
     $("#rocket").on('mousedown', function(e) {
-        t = setTimeout(function(){
+        t = setTimeout(function() {
             modal2.open();
         }, 2000);
     });
@@ -35,9 +35,20 @@ $(function() {
         clearTimeout(t);
     });
 
-    $("#rocket").on('keypress', function () {
-        
-    });
+    // $("html").on('keypress', function(event) {
+    //     if (event.which == 32) {
+    //         console.log("a");
+    //         var roc = $("#rocket");
+    //         var loc = roc.css("transform");
+    //         roc.css({
+    //                 "animation": "none",
+    //                 "transform": loc
+    //             });
+
+    //         roc.css("transform", "translateY(-10px)");
+    //         event.preventDefault();
+    //     }
+    // });
 });
 
 
@@ -72,7 +83,7 @@ function randomSpaceman() {
     $("#spaceman").css("top", yy + "px")
         .css("left", xx + "px")
         .css("transform", "rotate(" + d + "deg)");
-    console.log((xx) + "," + (yy));
+    // console.log((xx) + "," + (yy));
 
     setTimeout(function() { randomSpaceman(); }, 5000);
 }
