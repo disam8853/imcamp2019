@@ -411,12 +411,6 @@ input[type="text"]:focus {
     animation: sunshine 4s linear infinite;
 }
 
-#symbol {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
 .planet {
     transform: translate3d(0, 0, 0);
     will-change: transform;
@@ -474,4 +468,10 @@ input[type="text"]:focus {
     .modal {
         width: 80vw;
     }
+}
+
+.modal-close-corner {
+    position: absolute;
+    top: 3%;
+    right: 3%;
 }
