@@ -220,7 +220,7 @@ function planetsready() {
     // var modal3 = M.Modal.getInstance($('#modal3'));
     // modal3.open();
 
-    $("html").click(function() {
+    $("html").one('click', function() {
         var bgm = new Audio('audio/space.mp3');
         bgm.play();
     });
