@@ -291,19 +291,19 @@ input[type="text"]:focus {
 }
 
 .stars {
-    background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    background: #000 url(https://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
     z-index: -100;
 }
 
 .twinkling {
-    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+    background: transparent url(https://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
     z-index: -99;
 
     animation: move-twink-back 200s linear infinite;
 }
 
 .clouds {
-    background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    background: transparent url(https://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
     z-index: -97;
 
     animation: move-clouds-back 200s linear infinite;
