@@ -475,3 +475,18 @@ input[type="text"]:focus {
     top: 3%;
     right: 3%;
 }
+
+#question {
+    position: absolute;
+    bottom: 3vh;
+    right: 3vw;
+    background-color: rgba(0,0,0,0);
+    font-size: 3rem;
+}
+
+#question:hover {
+    animation-name: hvr-buzz;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

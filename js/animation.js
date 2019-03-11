@@ -215,8 +215,8 @@ function enterInit() {
 }
 
 function planetsready() {
-    // $("#modal3").modal();
-    // $('.collapsible').collapsible();
+    $("#modal3").modal();
+    $('.collapsible').collapsible();
     // var modal3 = M.Modal.getInstance($('#modal3'));
     // modal3.open();
 
