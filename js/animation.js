@@ -215,10 +215,10 @@ function enterInit() {
 }
 
 function planetsready() {
-    $("#modal3").modal();
-    $('.collapsible').collapsible();
-    var modal3 = M.Modal.getInstance($('#modal3'));
-    modal3.open();
+    // $("#modal3").modal();
+    // $('.collapsible').collapsible();
+    // var modal3 = M.Modal.getInstance($('#modal3'));
+    // modal3.open();
 
     $("html").click(function() {
         var bgm = new Audio('audio/space.mp3');
