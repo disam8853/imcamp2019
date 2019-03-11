@@ -64,6 +64,13 @@ a {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .info-container {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+}
+
 .step-title {
     line-height: 1.4rem;
 }
