@@ -477,6 +477,7 @@ input[type="text"]:focus {
 }
 
 #question {
+    display: none;
     position: absolute;
     bottom: 3vh;
     right: 3vw;

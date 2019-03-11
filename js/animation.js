@@ -187,6 +187,7 @@ function skipAllAni() {
     $("#spaceman").fadeIn(1000);
     randomSpaceman();
     $("#rocket").fadeIn(1000);
+    $("#question").show();
 
     planetsready();
 }
@@ -199,15 +200,14 @@ function enterInit() {
         $("#sun").css("animation", "sun_shrink 2s linear forwards reverse");
         setTimeout(function() {
             // must set to 2000 !!!!
-            $(".planet").fadeIn(500);
-            $(".orbit").fadeIn(500);
-            $("#spaceman").fadeIn(500);
+            $(".planet").fadeIn(1500);
+            $(".orbit").fadeIn(1500);
+            $("#spaceman").fadeIn(1500);
             randomSpaceman();
-            $("#rocket").fadeIn(500);
+            $("#rocket").fadeIn(1500);
             $("#sun").hide();
             $("#sunlabel").show();
-
-
+            $("#question").show();
         }, 2000);
     });
 
