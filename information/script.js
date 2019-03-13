@@ -2,6 +2,7 @@ var title = ["營隊介紹", "課程介紹", "營隊流程", "企業參訪", "�
 
 $(function() {
     var pg = $('#content');
+    
     pg.pagination({
         dataSource: [1, 2, 3, 4],
         pageSize: 1,
@@ -19,11 +20,9 @@ $(function() {
             });
             if (data == 1) {
                 $("#prev").addClass('disabled').removeClass('waves-effect');
-            }
-            else if (data == 4) {
+            } else if (data == 4) {
                 $("#next").addClass('disabled').removeClass('waves-effect');
-            }
-            else {
+            } else {
                 $("#prev").addClass('waves-effect').removeClass('disabled');
                 $("#next").addClass('waves-effect').removeClass('disabled');
             }
@@ -32,20 +31,19 @@ $(function() {
             for (var i = 0; i < pagination.totalNumber; i++) {
                 if (i == data - 1) {
                     $(lis[i + 1]).addClass('active').removeClass('waves-effect');
-                }
-                else {
+                } else {
                     $(lis[i + 1]).addClass('waves-effect').removeClass('active');
                 }
             }
         }
     });
 
-    // $('#content').pagination('go', 3);
+    $('#content').pagination('go', 3);
 
     $("#next").click(function() {
         pg.pagination('next');
     });
-    $("#prev").click(function(){
+    $("#prev").click(function() {
         pg.pagination('previous');
     });
 });
