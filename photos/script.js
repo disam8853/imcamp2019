@@ -1,4 +1,6 @@
-$(document).ready(function() {
+$(window).on('load', function() {
+    $("#loading").hide();
+
     $('.carousel').carousel({
         indicators: true,
         fullWidth: true
@@ -6,7 +8,7 @@ $(document).ready(function() {
 
     var instance = M.Carousel.getInstance($('.carousel'));
     var t = setInterval(function(){instance.next();}, 3000);
-    $(".carousel").on('mousedown', function(){
+    $(".carousel").one('mousedown', function(){
     	clearInterval(t);
     });
 });
