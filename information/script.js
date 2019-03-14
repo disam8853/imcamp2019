@@ -38,7 +38,7 @@ $(function() {
         }
     });
 
-    $('#content').pagination('go', 3);
+    // $('#content').pagination('go', 3);
 
     $("#next").click(function() {
         pg.pagination('next');
