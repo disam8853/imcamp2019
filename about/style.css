@@ -7,5 +7,37 @@
 }
 
 .white-light {
-	background-color: #ef9921;
+    background-color: #ef9921;
+}
+
+.img-container img {
+    box-sizing: border-box;
+}
+
+.about-img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.material-placeholder {
+	display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+    .material-placeholder {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .material-placeholder {
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .material-placeholder {
+        width: calc(100%/4);
+    }
 }

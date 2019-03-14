@@ -283,7 +283,7 @@ function planetsready() {
             } else if (st == "course") {
                 $(".white-light").css("background-color", "#828282")
                     .fadeIn(800, function() {
-                        window.location.href = "course/index.html";
+                        window.location.href = "https://ntu.im/course.intro";
                     });
             }
         });
