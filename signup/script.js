@@ -13,17 +13,6 @@ $(document).ready(function() {
             var index = cols[q];
             var b = $('select[name='+index+']');
             sel[index] = M.FormSelect.getInstance(b);
-            // sel[index]._handleInputClick = ()=>{
-            //     if (this.dropdown && this.dropdown.isOpen) {
-            //       this._setValueToInput();
-                  
-            //     }
-            //   }
-              
-            // sel[index]._handleSelectChange = (e)=> {
-            //     this._setValueToInput();
-            //     this._setSelectedStates();
-            //   }
             
         }
     }
@@ -62,19 +51,19 @@ var warnmsg = [
     "",
     "請填入性別",
     "生日請按照 xxxx/xx/xx",
-    "身份證字號格式錯誤, Ex:A123456789",
+    "身份證字號格式錯誤, e.g. A123456789",
     "",
     "",
     "",
     "",
     "",
     "",
-    "聯絡電話格式錯誤, Ex: 0987-654-321",
-    "facebook格式錯誤, Ex:www.facebook.com/www.dIsAn",
-    "email 格式錯誤, Ex: dOwOb@ntu.im",
+    "聯絡電話格式錯誤, e.g. 0987-654-321",
+    "facebook格式錯誤, e.g. www.facebook.com/www.dIsAn",
+    "email 格式錯誤, e.g. dOwOb@ntu.im",
     "",
     "",
-    "聯絡電話格式錯誤, Ex: 0987-654-321",
+    "聯絡電話格式錯誤, e.g. 0987-654-321",
     "",
     "",
 ]
