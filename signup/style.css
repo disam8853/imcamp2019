@@ -61,6 +61,7 @@ a {
 @media only screen and (max-width: 600px) {
     .step-content {
         margin-right: 1px !important;
+        margin-left: 20px !important;
     }
 }
 

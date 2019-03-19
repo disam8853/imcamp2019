@@ -1,6 +1,4 @@
 $(window).on('load', function() {
-    $("#loading").hide();
-
     $('.carousel').carousel({
         indicators: true,
         fullWidth: true

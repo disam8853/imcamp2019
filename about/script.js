@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.materialboxed').materialbox();
 
     var images = $('.materialboxed');
-    var name = ["召部", "公關", "美宣", "課程", "", "資訊", "", "隊輔", "器材", ""];
+    var name = ["召部", "公關", "美宣", "課程", "課程", "資訊", "活動", "隊輔", "器材", "庶務"];
     images.each(function(index) {
         let str = "<div class=\"image-caption\">" + name[index] + "</div>";
         let html = $.parseHTML(str);
