@@ -75,3 +75,12 @@ a {
 .step-title {
     line-height: 1.4rem;
 }
+
+#size_link {
+    color: yellow;
+    font-size: 90%;
+}
+
+#size_img {
+    width: 20vw;
+}

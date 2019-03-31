@@ -16,7 +16,14 @@ $(document).ready(function() {
             
         }
     }
-    console.log('ready')
+    console.log('ready');
+    $('#size_img').materialbox();
+});
+
+$('#size_link').on('click', function(){
+    let sizeImg = M.Materialbox.getInstance($('#size_img'));
+    $('#size_img').show();
+    sizeImg.open();
 });
 
 var cols = ["Checked","name", "gender", "birthday", "ID", "school","grade","team", "dietPrefer", "illness", "size", "phone",     "fb", "email", "emergency", "relationship", "emPhone", "intro", "motivation", "expection"];
