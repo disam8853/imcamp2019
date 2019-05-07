@@ -4,7 +4,7 @@ $(function() {
     var pg = $('#content');
     
     pg.pagination({
-        dataSource: [1, 2, 3, 4],
+        dataSource: [1, 2, 3, 4, 5],
         pageSize: 1,
         showPageNumbers: false,
         showNavigator: false,
@@ -20,7 +20,7 @@ $(function() {
             });
             if (data == 1) {
                 $("#prev").addClass('disabled').removeClass('waves-effect');
-            } else if (data == 4) {
+            } else if (data == 5) {
                 $("#next").addClass('disabled').removeClass('waves-effect');
             } else {
                 $("#prev").addClass('waves-effect').removeClass('disabled');
@@ -46,6 +46,8 @@ $(function() {
     $("#prev").click(function() {
         pg.pagination('previous');
     });
+
+    $('.materialboxed').materialbox();
 });
 
 function gopage(id) {

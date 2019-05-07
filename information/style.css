@@ -68,3 +68,37 @@ hr {
 td {
     width: 20%;
 }
+
+.img-container img {
+    box-sizing: border-box;
+}
+
+.about-img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.material-placeholder {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+@media screen and (min-width: 600px) {
+    .material-placeholder {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .material-placeholder {
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .material-placeholder {
+        width: calc(100%/4);
+    }
+}
