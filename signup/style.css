@@ -84,3 +84,10 @@ a {
 #size_img {
     width: 20vw;
 }
+
+.warning {
+    text-align: center;
+    font-weight: bold;
+    color: #FF4D4D;
+    display: block;
+}
